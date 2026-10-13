@@ -1,17 +1,19 @@
 # Xispa Suite
 
-Canal de distribución de Xispa Suite para Windows de 64 bits.
+Suite creativa para Windows de 64 bits. [Descargar una versión publicada](https://github.com/XispasStudios/XispasInstaller/releases/latest).
 
-Las nuevas versiones se publicarán aquí únicamente cuando el responsable de Xispa las autorice. La aplicación verifica el manifiesto firmado y la huella del ejecutable antes de instalarlo.
+## Actualizaciones
 
-## Canal de actualizaciones
+Canal oficial: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates.json`
 
-`https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates.json`
+Cada release estable incluye el ejecutable y `updates.json` como archivos separados. La Suite comprueba la firma y la huella SHA-256 antes de aceptar una actualización, conserva los datos fuera del EXE y pide guardar y confirmar el reinicio. La descarga en segundo plano puede desactivarse en Actualizaciones.
 
-Cada versión publicada debe incluir el ejecutable y su archivo `updates.json` firmado. No hay versiones disponibles hasta completar la primera publicación.
+Las versiones solo se preparan y publican cuando el responsable de Xispa lo solicita.
 
-El actualizador conserva cuentas, proyectos, comunidades y ajustes fuera del ejecutable. Antes de reemplazarlo solicita guardar el trabajo y crea una copia local.
+## Distribución
+
+Este repositorio contiene paquetes y cambios binarios firmados, junto con un publicador genérico. El código fuente de las aplicaciones Xispa y la clave privada de firma permanecen privados. El publicador reconstruye los bytes del instalador y los verifica; no ejecuta el programa.
 
 ## Comunidades
 
-Las comunidades por Internet requieren un servidor de Xispa configurado. Crear este repositorio no habilita por sí solo el servidor de cuentas o comunidades.
+Compartir cuentas y comunidades entre ordenadores requiere un servidor de Xispa configurado. El repositorio distribuye versiones del programa y no aloja los datos personales de la Suite.
