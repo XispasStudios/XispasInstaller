@@ -11,7 +11,7 @@ const { spawnSync } = require('node:child_process');
 const { TextDecoder } = require('node:util');
 
 const REPOSITORY = 'XispasStudios/XispasInstaller';
-const VERSION = '0.3.17';
+const VERSION = '0.3.18';
 const TAG = 'v' + VERSION;
 const BASE_VERSION = '0.3.10';
 const BASE_EXE = 'Xispa-Suite-0.3.10-Windows.exe';
