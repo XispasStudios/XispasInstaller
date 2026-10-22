@@ -12,17 +12,21 @@ Cada publicación identifica la arquitectura en el nombre del EXE. La caché int
 
 ## Actualizaciones
 
-La Suite selecciona automáticamente el canal de su arquitectura:
+A partir de la 0.3.76, la Suite utiliza el canal de firmas V2 y selecciona el catálogo de su arquitectura:
 
-- x64: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates.json`
-- ARM64: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-arm64.json`
-- ia32: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-ia32.json`
+- x64: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-v2.json`
+- ARM64: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-v2-arm64.json`
+- ia32: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-v2-ia32.json`
 
-Cada versión estable incluye los ejecutables y los tres catálogos como archivos separados. La Suite comprueba la firma Ed25519, la arquitectura, el tamaño y la huella SHA256 antes de aceptar una actualización; conserva los datos fuera del EXE y pide guardar y confirmar el reinicio. La descarga en segundo plano puede desactivarse en Actualizaciones.
+**Primera actualización desde la 0.3.74 o anteriores:** descarga una vez el EXE de tu arquitectura, guarda el trabajo, cierra la Suite y sus programas y sustituye el EXE en su ubicación habitual. Conserva las carpetas de datos, cuentas y proyectos. Esta primera transición al canal V2 es manual; no se presenta como comprobada mediante el actualizador nativo de Windows.
+
+Los catálogos anteriores `updates.json`, `updates-arm64.json` y `updates-ia32.json` se conservan firmados y sin cambios en la 0.3.74 para las instalaciones del canal V1.
+
+Cada versión estable incluye los ejecutables y los catálogos como archivos separados. La Suite comprueba la firma Ed25519, la arquitectura, el tamaño y la huella SHA256 antes de aceptar una actualización; conserva los datos fuera del EXE y pide guardar y confirmar el reinicio. La descarga en segundo plano puede desactivarse en Actualizaciones.
 
 Si una versión anterior muestra «Las rutas locales de actualización no son válidas», cierra la Suite y abre una vez el EXE corregido desde la misma carpeta del portátil anterior, conservando las carpetas de datos existentes. Ese fallo del instalador anterior no indica por sí solo que tu PC tenga una arquitectura incorrecta.
 
-Los doce programas disponen de paquetes independientes por arquitectura. Sus números de versión pueden ser distintos del launcher cuando una entrega solo corrige la Suite. Los paquetes ASAR de programas se instalan desde la Suite y no son EXE autónomos.
+Los doce programas disponen de paquetes independientes por arquitectura. Sus números de versión pueden ser distintos del launcher cuando una entrega solo corrige la Suite. Los paquetes ASAR de programas se instalan desde la Suite y no son EXE autónomos. Los tres catálogos de programas V2 se publican juntos en este repositorio y la Suite 0.3.76 los utiliza según su arquitectura.
 
 ## Distribución
 
