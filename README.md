@@ -26,7 +26,7 @@ Cada versión estable incluye los ejecutables y los catálogos como archivos sep
 
 Si una versión anterior muestra «Las rutas locales de actualización no son válidas», cierra la Suite y abre una vez el EXE corregido desde la misma carpeta del portátil anterior, conservando las carpetas de datos existentes. Ese fallo del instalador anterior no indica por sí solo que tu PC tenga una arquitectura incorrecta.
 
-Los doce programas disponen de paquetes independientes por arquitectura. Sus números de versión pueden ser distintos del launcher cuando una entrega solo corrige la Suite. Los paquetes ASAR de programas se instalan desde la Suite y no son EXE autónomos. Los tres catálogos de programas V2 se publican juntos en este repositorio y la Suite 0.3.76 los utiliza según su arquitectura.
+Los trece programas disponen de paquetes independientes por arquitectura. Sus números de versión pueden ser distintos del launcher cuando una entrega solo corrige la Suite. Los paquetes ASAR de programas se instalan desde la Suite y no son EXE autónomos. Los tres catálogos de programas V2 se publican juntos en este repositorio y la Suite los utiliza según su arquitectura. La 0.3.78 incorpora Xispa Figstudio; los paquetes de programas de esta entrega requieren la Suite 0.3.78, que debe actualizarse primero.
 
 ## Distribución
 
