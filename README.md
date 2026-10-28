@@ -2,11 +2,11 @@
 
 ## Linux: edición activa
 
-**Xispa Creative Suite para Linux 1.0.3 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
+**Xispa Creative Suite para Linux 1.0.4 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
 
-[Descargar Linux 1.0.3](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.3)
+[Descargar Linux 1.0.4](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.4)
 
-Descarga `Xispa-Creative-Suite-1.0.3-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
+Descarga `Xispa-Creative-Suite-1.0.4-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
 
 La edición Linux recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Desde Linux 1.0.3 también se incluye **Xispa Figstudio**, basada en FigCraft 0.11.2, como decimotercera aplicación nativa independiente con icono FS. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
 
@@ -15,6 +15,10 @@ Linux 1.0.1 renueva el entorno de los editores, sus acciones y diálogos HTML, c
 Linux 1.0.2 distribuye la lógica JavaScript propia ofuscada y los ayudantes Python empaquetados. Las fuentes editables y herramientas de desarrollo no se incluyen en el paquete. Las descargas siguen siendo públicas. Esto dificulta la lectura directa, pero no cifra el producto ni garantiza impedir su análisis. Las licencias de terceros se conservan. La retirada de Discord de los motores WASM sigue pendiente y no se presenta como realizada en esta entrega.
 
 Figstudio se instala desde el catálogo de la suite y tiene acceso propio en Linux. Guarda y abre sus archivos desde su ventana nativa; sus proyectos todavía no aparecen en la biblioteca compartida de la suite. Su enlace Discord se ha retirado del diálogo Acerca de; la retirada en los otros motores WASM sigue pendiente.
+
+Linux 1.0.4 añade **Xispa Premiere**, basada en Concat 0.2.8, como decimocuarta aplicación nativa. La anterior aplicación de vídeo pasa a llamarse **Xispa Premiere Plus**, con su identificador y sus proyectos conservados. Ambas tienen accesos e iconos propios. Figstudio recibe un retoque de paneles, acentos y controles.
+
+**Premiere se distribuye bajo AGPL-3.0-or-later con sus fuentes modificadas**, dependencias Rust y scripts de compilación en `Xispa-Premiere-1.0.4-Corresponding-Source.zip`, dentro de la publicación Linux 1.0.4. Puede reconstruirse y ejecutarse sin el launcher propietario. Sus proyectos mantienen el formato Concat, separado de los proyectos de Premiere Plus.
 
 ### Actualizaciones Linux
 
@@ -36,6 +40,6 @@ La edición Linux es una aplicación separada y una primera versión, no una act
 
 ## Distribución y comunidades
 
-Este repositorio distribuye la aplicación y los catálogos de actualización. El código fuente privado de desarrollo y la clave privada de firma permanecen privados. Las notas de cada publicación describen el alcance real de las comprobaciones.
+Este repositorio distribuye la aplicación y los catálogos de actualización. El código propio privado de la suite y la clave privada de firma permanecen privados. La aplicación Xispa Premiere conserva su licencia AGPL y sus fuentes correspondientes se publican junto al instalable. Las notas de cada publicación describen el alcance real de las comprobaciones.
 
 Compartir cuentas y comunidades entre ordenadores requiere un servidor de Xispa configurado. Este repositorio no aloja los datos personales de la suite.
