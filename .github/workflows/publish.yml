@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   publish:
-    if: github.repository == 'XispasStudios/XispasInstaller' && github.ref == 'refs/heads/main'
+    if: ${{ false }} # Windows 0.3.78: fin de mantenimiento; no publicar nuevas actualizaciones Windows.
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     permissions:
