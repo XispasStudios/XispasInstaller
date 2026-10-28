@@ -2,13 +2,15 @@
 
 ## Linux: edición activa
 
-**Xispa Creative Suite para Linux 1.0.0 es la primera edición independiente para Linux x86_64.**
+**Xispa Creative Suite para Linux 1.0.1 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
 
-[Descargar Linux 1.0.0](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.0)
+[Descargar Linux 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.1)
 
-Descarga `Xispa-Creative-Suite-1.0.0-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
+Descarga `Xispa-Creative-Suite-1.0.1-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
 
-Esta primera entrega recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Figstudio no se incluye en esta primera edición. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
+La edición Linux recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Figstudio no se incluye en esta primera edición. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
+
+Linux 1.0.1 renueva el entorno de los editores, sus acciones y diálogos HTML, conservando el diseño del launcher y los motores WASM originales. Consulta las notas para conocer el alcance. Esta revisión se instala manualmente desde el ZIP; no incluye un catálogo firmado porque la clave privada original no está disponible. La verificación de firmas permanece activa.
 
 ### Actualizaciones Linux
 
