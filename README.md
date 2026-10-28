@@ -1,37 +1,35 @@
 # Xispa Creative Suite
 
-Suite creativa para Windows. [Descargar la versión estable](https://github.com/XispasStudios/XispasInstaller/releases/latest).
+## Linux: edición activa
 
-## Elige tu edición
+**Xispa Creative Suite para Linux 1.0.0 es la primera edición independiente para Linux x86_64.**
 
-- **x64:** PC Intel/AMD con Windows de 64 bits.
-- **ARM64:** PC con Windows ARM64.
-- **ia32 (x86):** edición de compatibilidad para Windows de 32 bits.
+[Descargar Linux 1.0.0](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.0)
 
-Cada publicación identifica la arquitectura en el nombre del EXE. La caché interna del programa no es el EXE portátil que debes abrir.
+Descarga `Xispa-Creative-Suite-1.0.0-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
 
-## Actualizaciones
+Esta primera entrega recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Figstudio no se incluye en esta primera edición. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
 
-A partir de la 0.3.76, la Suite utiliza el canal de firmas V2 y selecciona el catálogo de su arquitectura:
+### Actualizaciones Linux
 
-- x64: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-v2.json`
-- ARM64: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-v2-arm64.json`
-- ia32: `https://github.com/XispasStudios/XispasInstaller/releases/latest/download/updates-v2-ia32.json`
+Los lanzamientos de esta edición usan etiquetas **`linux-vVERSION`**, comenzando por `linux-v1.0.0`. El launcher Linux consulta únicamente este canal y no trata las versiones de Windows como actualizaciones Linux.
 
-**Primera actualización desde la 0.3.74 o anteriores:** descarga una vez el EXE de tu arquitectura, guarda el trabajo, cierra la Suite y sus programas y sustituye el EXE en su ubicación habitual. Conserva las carpetas de datos, cuentas y proyectos. Esta primera transición al canal V2 es manual; no se presenta como comprobada mediante el actualizador nativo de Windows.
+La primera versión se instala desde el ZIP. Para una futura actualización automática deben publicarse el ZIP Linux y `updates-v2-linux-x64.json`, firmado con la clave Ed25519 de Xispa, en la misma release Linux. El launcher muestra las notas, verifica firma, tamaño y SHA256 y permite reiniciar para instalar. Los proyectos, cuentas y preferencias se conservan fuera del programa. La versión anterior se envía a la papelera solo después de confirmar que la nueva interfaz arranca; si falla, se restaura la anterior.
 
-Los catálogos anteriores `updates.json`, `updates-arm64.json` y `updates-ia32.json` se conservan firmados y sin cambios en la 0.3.74 para las instalaciones del canal V1.
+Los programas disponen de accesos independientes y perfiles propios. Instalar o sustituir el launcher no borra los proyectos de los programas.
 
-Cada versión estable incluye los ejecutables y los catálogos como archivos separados. La Suite comprueba la firma Ed25519, la arquitectura, el tamaño y la huella SHA256 antes de aceptar una actualización; conserva los datos fuera del EXE y pide guardar y confirmar el reinicio. La descarga en segundo plano puede desactivarse en Actualizaciones.
+## Windows: fin de mantenimiento
 
-Si una versión anterior muestra «Las rutas locales de actualización no son válidas», cierra la Suite y abre una vez el EXE corregido desde la misma carpeta del portátil anterior, conservando las carpetas de datos existentes. Ese fallo del instalador anterior no indica por sí solo que tu PC tenga una arquitectura incorrecta.
+**Windows 0.3.78 es la última versión de Windows y no recibirá nuevas actualizaciones.**
 
-Los trece programas disponen de paquetes independientes por arquitectura. Sus números de versión pueden ser distintos del launcher cuando una entrega solo corrige la Suite. Los paquetes ASAR de programas se instalan desde la Suite y no son EXE autónomos. Los tres catálogos de programas V2 se publican juntos en este repositorio y la Suite los utiliza según su arquitectura. La 0.3.78 incorpora Xispa Figstudio; los paquetes de programas de esta entrega requieren la Suite 0.3.78, que debe actualizarse primero.
+[Descargar la última edición histórica de Windows](https://github.com/XispasStudios/XispasInstaller/releases/tag/v0.3.78)
 
-## Distribución
+Se conservan sus EXE x64, ARM64 e ia32, los paquetes de programas y los catálogos firmados históricos. No se sustituyen por archivos Linux. Los canales antiguos V1 permanecen en 0.3.74 y los V2 de Windows en su última entrega publicada.
 
-Este repositorio contiene los paquetes de distribución y catálogos de actualización firmados. El código fuente de desarrollo y la clave privada de firma permanecen privados. Las comprobaciones estáticas de integridad y empaquetado no sustituyen la comprobación manual del arranque y la actualización en Windows; las notas de cada publicación indican su alcance.
+La edición Linux es una aplicación separada y una primera versión, no una actualización de Windows. Conserva tus carpetas de datos si cambias de sistema; esta publicación no incluye una migración automática de los perfiles Windows a Linux.
 
-## Comunidades
+## Distribución y comunidades
 
-Compartir cuentas y comunidades entre ordenadores requiere un servidor de Xispa configurado. Este repositorio distribuye el programa y no aloja los datos personales de la Suite.
+Este repositorio distribuye la aplicación y los catálogos de actualización. El código fuente privado de desarrollo y la clave privada de firma permanecen privados. Las notas de cada publicación describen el alcance real de las comprobaciones.
+
+Compartir cuentas y comunidades entre ordenadores requiere un servidor de Xispa configurado. Este repositorio no aloja los datos personales de la suite.
