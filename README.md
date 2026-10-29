@@ -2,11 +2,11 @@
 
 ## Linux: edición activa
 
-**Xispa Creative Suite para Linux 1.0.7 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
+**Xispa Creative Suite para Linux 1.0.8 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
 
-[Descargar Linux 1.0.7](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.7)
+[Descargar Linux 1.0.8](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.8)
 
-Descarga `Xispa-Creative-Suite-1.0.7-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
+Descarga `Xispa-Creative-Suite-1.0.8-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
 
 La edición Linux recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Desde Linux 1.0.3 también se incluye **Xispa Figstudio**, basada en FigCraft 0.11.2, como decimotercera aplicación nativa independiente con icono FS. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
 
@@ -25,6 +25,10 @@ Linux 1.0.5 ajusta únicamente el estilo de Premiere normal a Plus: paneles plan
 Linux 1.0.6 incorpora **Xispa Notes 1.0.0**, decimoquinta aplicación: notas Markdown, carpetas, favoritos, búsqueda, adjuntos, listas de tareas, exportación, copias, papelera recuperable e historial. Tiene icono NT y acceso independiente. También se puede [descargar Notes por separado](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.6/Xispa-Notes-1.0.0-Linux-x64.zip). Los datos se guardan en `~/.local/share/xispa-notes/vault`, fuera del programa. Usa código propio y bibliotecas con sus licencias; los ZIP de Obsidian aportados no contenían sus fuentes. Esta entrega conserva los motores de los otros catorce editores. La unificación interna de los doce motores WASM queda pendiente de recuperar sus fuentes personalizadas.
 
 Linux 1.0.7 incorpora **Xispa Canvas 1.0.0**, decimosexta aplicación: dibujo y diagramas con Excalidraw 0.18.1 (MIT), integración independiente y almacén Rust propio. Fondo negro, paneles oscuros y botones azules; formas, texto, conectores, imágenes, biblioteca local, autoguardado, papelera e historial. Importa/exporta `.excalidraw` y exporta PNG y SVG con fuentes locales incorporadas. Icono CV, sin cuentas ni colaboración remota. [Descargar Canvas por separado](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.7/Xispa-Canvas-1.0.0-Linux-x64.zip). Datos fuera del programa en `~/.local/share/xispa-canvas/vault`; biblioteca en `~/.local/share/xispa-canvas/library.json`. El catálogo usa la versión real de cada programa para evitar avisos innecesarios. Notes y los otros catorce editores conservan sus archivos de 1.0.6. Consulta la publicación para límites y validación.
+
+Linux 1.0.8 corrige la apertura de Notes y Canvas desde la suite: son aplicaciones locales y pueden abrirse sin iniciar sesión, también desde los accesos de la pantalla de cuenta. Las ventanas existentes se activan mediante comunicación local; no se inicia un segundo proceso. El launcher confirma el arranque y conserva registros si falla. Se mantiene la autenticación de los demás editores y la verificación de firmas. Se ajusta la compatibilidad de ventanas Linux y se corrigen avisos de actualización que comparaban editores con la versión del launcher.
+
+Incluye **Notes 1.0.1**, con barra de formato Markdown, vista dividida, previsualización y tiempo de lectura, y **Canvas 1.0.1**, con encuadre, cuadrícula, detalles de proyecto y diálogos protegidos frente a atajos accidentales. [Descargar Notes 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Notes-1.0.1-Linux-x64.zip) · [Descargar Canvas 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Canvas-1.0.1-Linux-x64.zip). Cierra cada editor antes de instalar su nueva versión; sus almacenes de datos se conservan fuera del programa. Los otros catorce editores no cambian.
 
 ### Actualizaciones Linux
 
