@@ -2,11 +2,11 @@
 
 ## Linux: edición activa
 
-**Xispa Creative Suite para Linux 1.0.5 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
+**Xispa Creative Suite para Linux 1.0.6 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
 
-[Descargar Linux 1.0.5](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.5)
+[Descargar Linux 1.0.6](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.6)
 
-Descarga `Xispa-Creative-Suite-1.0.5-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
+Descarga `Xispa-Creative-Suite-1.0.6-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
 
 La edición Linux recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Desde Linux 1.0.3 también se incluye **Xispa Figstudio**, basada en FigCraft 0.11.2, como decimotercera aplicación nativa independiente con icono FS. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
 
@@ -21,6 +21,8 @@ Linux 1.0.4 añade **Xispa Premiere**, basada en Concat 0.2.8, como decimocuarta
 **Premiere se distribuye bajo AGPL-3.0-or-later con sus fuentes modificadas**, dependencias Rust y scripts de compilación en `Xispa-Premiere-1.0.4-Corresponding-Source.zip`, dentro de la publicación Linux 1.0.4. Puede reconstruirse y ejecutarse sin el launcher propietario. Sus proyectos mantienen el formato Concat, separado de los proyectos de Premiere Plus.
 
 Linux 1.0.5 ajusta únicamente el estilo de Premiere normal a Plus: paneles planos, paleta gris oscura, azules y colores de los clips. No añade herramientas ni cambia los motores, formatos o atajos. Las fuentes actualizadas están en `Xispa-Premiere-1.0.5-Corresponding-Source.zip` dentro de la publicación 1.0.5.
+
+Linux 1.0.6 incorpora **Xispa Notes 1.0.0**, decimoquinta aplicación: notas Markdown, carpetas, favoritos, búsqueda, adjuntos, listas de tareas, exportación, copias, papelera recuperable e historial. Tiene icono NT y acceso independiente. También se puede [descargar Notes por separado](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.6/Xispa-Notes-1.0.0-Linux-x64.zip). Los datos se guardan en `~/.local/share/xispa-notes/vault`, fuera del programa. Usa código propio y bibliotecas con sus licencias; los ZIP de Obsidian aportados no contenían sus fuentes. Esta entrega conserva los motores de los otros catorce editores. La unificación interna de los doce motores WASM queda pendiente de recuperar sus fuentes personalizadas.
 
 ### Actualizaciones Linux
 
