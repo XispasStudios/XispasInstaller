@@ -2,11 +2,11 @@
 
 ## Linux: edición activa
 
-**Xispa Creative Suite para Linux 1.0.8 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
+**Xispa Creative Suite para Linux 1.0.9 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
 
-[Descargar Linux 1.0.8](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.8)
+[Descargar Linux 1.0.9](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.9)
 
-Descarga `Xispa-Creative-Suite-1.0.8-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
+Descarga `Xispa-Creative-Suite-1.0.9-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
 
 La edición Linux recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Desde Linux 1.0.3 también se incluye **Xispa Figstudio**, basada en FigCraft 0.11.2, como decimotercera aplicación nativa independiente con icono FS. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
 
@@ -29,6 +29,8 @@ Linux 1.0.7 incorpora **Xispa Canvas 1.0.0**, decimosexta aplicación: dibujo y 
 Linux 1.0.8 corrige la apertura de Notes y Canvas desde la suite: son aplicaciones locales y pueden abrirse sin iniciar sesión, también desde los accesos de la pantalla de cuenta. Las ventanas existentes se activan mediante comunicación local; no se inicia un segundo proceso. El launcher confirma el arranque y conserva registros si falla. Se mantiene la autenticación de los demás editores y la verificación de firmas. Se ajusta la compatibilidad de ventanas Linux y se corrigen avisos de actualización que comparaban editores con la versión del launcher.
 
 Incluye **Notes 1.0.1**, con barra de formato Markdown, vista dividida, previsualización y tiempo de lectura, y **Canvas 1.0.1**, con encuadre, cuadrícula, detalles de proyecto y diálogos protegidos frente a atajos accidentales. [Descargar Notes 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Notes-1.0.1-Linux-x64.zip) · [Descargar Canvas 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Canvas-1.0.1-Linux-x64.zip). Cierra cada editor antes de instalar su nueva versión; sus almacenes de datos se conservan fuera del programa. Los otros catorce editores no cambian.
+
+Linux 1.0.9 corrige una regresión de apertura de 1.0.8: el launcher utilizaba X11 incluso dentro de una sesión Wayland porque ambas variables de pantalla estaban presentes. Ahora selecciona Wayland nativo cuando la sesión lo indica y conserva X11 como alternativa. Se ha comprobado en el PC Pop!_OS una ventana visible, en primer plano y completamente cargada. La interfaz y los programas no cambian; Notes y Canvas siguen en 1.0.1, disponibles por separado en Linux 1.0.8. Las cuentas, preferencias y proyectos permanecen en sus almacenes anteriores.
 
 ### Actualizaciones Linux
 
