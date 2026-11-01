@@ -1,48 +1,44 @@
 # Xispa Creative Suite
 
-## Linux: edición activa
+## Linux: edición nativa activa
 
-**Xispa Creative Suite para Linux 1.0.11 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
+**Xispa Creative Suite 2.0.0 para Linux x86_64** es la nueva edición activa, basada en el launcher Rust aportado por el propietario.
 
-[Descargar Linux 1.0.11](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.11)
+[Descargar la edición Rust 2.0.0](https://github.com/XispasStudios/XispasInstaller/releases/tag/native-v2.0.0)
 
-Descarga `Xispa-Creative-Suite-1.0.11-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
+Extrae `artcraft-launcher-2.0.0-linux-x86_64.tar.gz` y ejecuta:
 
-La edición Linux recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Desde Linux 1.0.3 también se incluye **Xispa Figstudio**, basada en FigCraft 0.11.2, como decimotercera aplicación nativa independiente con icono FS. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
+```sh
+./xispa-creative-suite-2.0.0/bin/artcraft-launcher --install-self
+```
 
-Linux 1.0.1 renueva el entorno de los editores, sus acciones y diálogos HTML, conservando el diseño del launcher y los motores WASM originales. Consulta las notas para conocer el alcance. Esta revisión se instala manualmente desde el ZIP; no incluye un catálogo firmado porque la clave privada original no está disponible. La verificación de firmas permanece activa.
+Después abre **Xispa Creative Suite** desde el menú de aplicaciones. El paquete contiene el ejecutable nativo y sus licencias; cada editor se descarga e instala por separado desde el catálogo. No requiere Electron, JavaScript ni compilar Rust en el equipo de destino. Probado en este PC Pop!_OS x86_64.
 
-Linux 1.0.2 distribuye la lógica JavaScript propia ofuscada y los ayudantes Python empaquetados. Las fuentes editables y herramientas de desarrollo no se incluyen en el paquete. Las descargas siguen siendo públicas. Esto dificulta la lectura directa, pero no cifra el producto ni garantiza impedir su análisis. Las licencias de terceros se conservan. La retirada de Discord de los motores WASM sigue pendiente y no se presenta como realizada en esta entrega.
+### Interfaz y aplicaciones
 
-Figstudio se instala desde el catálogo de la suite y tiene acceso propio en Linux. Guarda y abre sus archivos desde su ventana nativa; sus proyectos todavía no aparecen en la biblioteca compartida de la suite. Su enlace Discord se ha retirado del diálogo Acerca de; la retirada en los otros motores WASM sigue pendiente.
+El launcher usa Rust y egui: fondo negro, paneles gris oscuro y controles azules redondeados. El acceso a cuentas también está implementado en Rust y utiliza el servicio de cuentas existente o las cuentas locales anteriores. Las sesiones nativas persistentes se cifran localmente y caducan.
 
-Linux 1.0.4 añade **Xispa Premiere**, basada en Concat 0.2.8, como decimocuarta aplicación nativa. La anterior aplicación de vídeo pasa a llamarse **Xispa Premiere Plus**, con su identificador y sus proyectos conservados. Ambas tienen accesos e iconos propios. Figstudio recibe un retoque de paneles, acentos y controles.
+El catálogo conserva las quince aplicaciones del launcher aportado: **Xispa Photocraft, Illustrate, Premiere Plus, Lightstudio, Document Pro, Beyond Effects, InLayout, Figstudio, Writer, Audiowave, Present, Autodraft, Sheets, Create y Solid**.
 
-**Premiere se distribuye bajo AGPL-3.0-or-later con sus fuentes modificadas**, dependencias Rust y scripts de compilación en `Xispa-Premiere-1.0.4-Corresponding-Source.zip`, dentro de la publicación Linux 1.0.4. Puede reconstruirse y ejecutarse sin el launcher propietario. Sus proyectos mantienen el formato Concat, separado de los proyectos de Premiere Plus.
+Son aplicaciones nativas independientes. Se descargan desde los repositorios oficiales fijados en el catálogo, con comprobación SHA-256. Los nombres Xispa y sus iconos se aplican al catálogo y a los accesos del sistema; los editores conservan sus interfaces internas y créditos originales. Esta entrega no recompila ni rediseña el interior de los quince editores.
 
-Linux 1.0.5 ajusta únicamente el estilo de Premiere normal a Plus: paneles planos, paleta gris oscura, azules y colores de los clips. No añade herramientas ni cambia los motores, formatos o atajos. Las fuentes actualizadas están en `Xispa-Premiere-1.0.5-Corresponding-Source.zip` dentro de la publicación 1.0.5.
+### Actualizaciones y datos
 
-Linux 1.0.6 incorpora **Xispa Notes 1.0.0**, decimoquinta aplicación: notas Markdown, carpetas, favoritos, búsqueda, adjuntos, listas de tareas, exportación, copias, papelera recuperable e historial. Tiene icono NT y acceso independiente. También se puede [descargar Notes por separado](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.6/Xispa-Notes-1.0.0-Linux-x64.zip). Los datos se guardan en `~/.local/share/xispa-notes/vault`, fuera del programa. Usa código propio y bibliotecas con sus licencias; los ZIP de Obsidian aportados no contenían sus fuentes. Esta entrega conserva los motores de los otros catorce editores. La unificación interna de los doce motores WASM queda pendiente de recuperar sus fuentes personalizadas.
+El launcher nativo consulta exclusivamente el canal **`native-vVERSION`** de este repositorio para sus propias actualizaciones. Los editores consultan sus repositorios upstream. Esta edición se instala una vez manualmente; los launchers Linux antiguos no migran automáticamente a ella.
 
-Linux 1.0.7 incorpora **Xispa Canvas 1.0.0**, decimosexta aplicación: dibujo y diagramas con Excalidraw 0.18.1 (MIT), integración independiente y almacén Rust propio. Fondo negro, paneles oscuros y botones azules; formas, texto, conectores, imágenes, biblioteca local, autoguardado, papelera e historial. Importa/exporta `.excalidraw` y exporta PNG y SVG con fuentes locales incorporadas. Icono CV, sin cuentas ni colaboración remota. [Descargar Canvas por separado](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.7/Xispa-Canvas-1.0.0-Linux-x64.zip). Datos fuera del programa en `~/.local/share/xispa-canvas/vault`; biblioteca en `~/.local/share/xispa-canvas/library.json`. El catálogo usa la versión real de cada programa para evitar avisos innecesarios. Notes y los otros catorce editores conservan sus archivos de 1.0.6. Consulta la publicación para límites y validación.
+La instalación nativa del launcher está en `~/.local/share/xispa-native-launcher`. El catálogo instalado se registra en `~/.local/share/xispa-creative-suite`. Las cuentas locales anteriores siguen en `~/.config/Xispa Suite/suite-data`. Los proyectos y los perfiles anteriores se conservan fuera del programa.
 
-Linux 1.0.8 corrige la apertura de Notes y Canvas desde la suite: son aplicaciones locales y pueden abrirse sin iniciar sesión, también desde los accesos de la pantalla de cuenta. Las ventanas existentes se activan mediante comunicación local; no se inicia un segundo proceso. El launcher confirma el arranque y conserva registros si falla. Se mantiene la autenticación de los demás editores y la verificación de firmas. Se ajusta la compatibilidad de ventanas Linux y se corrigen avisos de actualización que comparaban editores con la versión del launcher.
+En el PC del propietario se retiraron las instalaciones anteriores a la papelera, verificando que los datos protegidos permanecían intactos. Esa retirada no se ejecuta automáticamente en otros equipos.
 
-Incluye **Notes 1.0.1**, con barra de formato Markdown, vista dividida, previsualización y tiempo de lectura, y **Canvas 1.0.1**, con encuadre, cuadrícula, detalles de proyecto y diálogos protegidos frente a atajos accidentales. [Descargar Notes 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Notes-1.0.1-Linux-x64.zip) · [Descargar Canvas 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Canvas-1.0.1-Linux-x64.zip). Cierra cada editor antes de instalar su nueva versión; sus almacenes de datos se conservan fuera del programa. Los otros catorce editores no cambian.
+Validación de esta entrega: 355 pruebas unitarias aprobadas, revisión Clippy sin avisos de código, compilación WebAssembly y prueba de arranque aislada de los quince editores. Esto no equivale a comprobar exhaustivamente cada herramienta de los editores upstream.
 
-Linux 1.0.9 corrige una regresión de apertura de 1.0.8: el launcher utilizaba X11 incluso dentro de una sesión Wayland porque ambas variables de pantalla estaban presentes. Ahora selecciona Wayland nativo cuando la sesión lo indica y conserva X11 como alternativa. Se ha comprobado en el PC Pop!_OS una ventana visible, en primer plano y completamente cargada. La interfaz y los programas no cambian; Notes y Canvas siguen en 1.0.1, disponibles por separado en Linux 1.0.8. Las cuentas, preferencias y proyectos permanecen en sus almacenes anteriores.
+## Ediciones Linux anteriores
 
-Linux 1.0.11 rediseña los editores conservando herramientas y formatos. Notes y Canvas pasan a 1.0.3, con texto más legible, controles redondeados y distribución adaptable. Figstudio 1.0.6 recibe el tema oscuro azul nativo, y Premiere 1.0.6 conserva su paleta de 1.0.5 con controles más redondeados. Las fuentes correspondientes de Premiere están en `Xispa-Premiere-1.0.6-Corresponding-Source.zip` en esta publicación. Los doce editores originales pasan a 1.0.6 con cambios en su entorno exterior y diálogos; sus interfaces internas WASM se conservan porque faltan sus fuentes personalizadas exactas. El launcher conserva su diseño. Los cuatro editores independientes se abren desde la suite sin cuenta y se mantiene la selección correcta de Wayland. Las instalaciones sustituidas se envían a la papelera, conservando los datos fuera del programa.
+Las publicaciones `linux-v1.0.x` quedan como historial. La última de esa generación fue [Linux 1.0.11](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.11), basada en Electron y motores WASM.
 
-[Descargar Notes 1.0.3](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.11/Xispa-Notes-1.0.3-Linux-x64.zip) · [Descargar Canvas 1.0.3](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.11/Xispa-Canvas-1.0.3-Linux-x64.zip). La instalación sigue siendo manual y la verificación de firmas permanece activa.
+Notes, Canvas y Premiere basada en Concat pertenecen a esa generación y no forman parte del nuevo catálogo de quince aplicaciones. Sus datos anteriores se conservan. Las fuentes AGPL correspondientes a Premiere siguen disponibles en sus publicaciones históricas, incluida `Xispa-Premiere-1.0.6-Corresponding-Source.zip` en Linux 1.0.11.
 
-### Actualizaciones Linux
-
-Los lanzamientos de esta edición usan etiquetas **`linux-vVERSION`**, comenzando por `linux-v1.0.0`. El launcher Linux consulta únicamente este canal y no trata las versiones de Windows como actualizaciones Linux.
-
-La primera versión se instala desde el ZIP. Para una futura actualización automática deben publicarse el ZIP Linux y `updates-v2-linux-x64.json`, firmado con la clave Ed25519 de Xispa, en la misma release Linux. El launcher muestra las notas, verifica firma, tamaño y SHA256 y permite reiniciar para instalar. Los proyectos, cuentas y preferencias se conservan fuera del programa. La versión anterior se envía a la papelera solo después de confirmar que la nueva interfaz arranca; si falla, se restaura la anterior.
-
-Los programas disponen de accesos independientes y perfiles propios. Instalar o sustituir el launcher no borra los proyectos de los programas.
+Los catálogos firmados históricos y su comprobación no se modifican. El nuevo canal nativo utiliza su propio mecanismo de actualización y sumas SHA-256; no se presenta como un catálogo Ed25519 nuevo.
 
 ## Windows: fin de mantenimiento
 
@@ -50,12 +46,12 @@ Los programas disponen de accesos independientes y perfiles propios. Instalar o 
 
 [Descargar la última edición histórica de Windows](https://github.com/XispasStudios/XispasInstaller/releases/tag/v0.3.78)
 
-Se conservan sus EXE x64, ARM64 e ia32, los paquetes de programas y los catálogos firmados históricos. No se sustituyen por archivos Linux. Los canales antiguos V1 permanecen en 0.3.74 y los V2 de Windows en su última entrega publicada.
+La publicación global marcada como Latest se conserva en Windows 0.3.78 para no enviar Linux a los launchers antiguos. Usa el enlace del canal nativo anterior para descargar Linux.
 
-La edición Linux es una aplicación separada y una primera versión, no una actualización de Windows. Conserva tus carpetas de datos si cambias de sistema; esta publicación no incluye una migración automática de los perfiles Windows a Linux.
+## Distribución y licencias
 
-## Distribución y comunidades
+Este repositorio distribuye ejecutables y notas de actualización. Compilar Rust no cifra un programa ni garantiza impedir su análisis. No se publican claves privadas ni datos de cuentas.
 
-Este repositorio distribuye la aplicación y los catálogos de actualización. El código propio privado de la suite y la clave privada de firma permanecen privados. La aplicación Xispa Premiere conserva su licencia AGPL y sus fuentes correspondientes se publican junto al instalable. Las notas de cada publicación describen el alcance real de las comprobaciones.
+Se incluyen licencias y atribuciones en `share/licenses`, conservando los derechos de los proyectos upstream y las obligaciones de sus dependencias. El código propio privado permanece fuera de los paquetes de distribución; las fuentes de componentes que deban publicarse por su licencia se conservan en sus canales correspondientes.
 
-Compartir cuentas y comunidades entre ordenadores requiere un servidor de Xispa configurado. Este repositorio no aloja los datos personales de la suite.
+El repositorio no aloja datos personales del servicio de cuentas.
