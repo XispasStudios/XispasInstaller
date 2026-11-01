@@ -2,11 +2,11 @@
 
 ## Linux: edición activa
 
-**Xispa Creative Suite para Linux 1.0.9 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
+**Xispa Creative Suite para Linux 1.0.11 es la edición activa para Linux x86_64.** La primera edición independiente fue Linux 1.0.0.
 
-[Descargar Linux 1.0.9](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.9)
+[Descargar Linux 1.0.11](https://github.com/XispasStudios/XispasInstaller/releases/tag/linux-v1.0.11)
 
-Descarga `Xispa-Creative-Suite-1.0.9-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
+Descarga `Xispa-Creative-Suite-1.0.11-Linux-x64.zip`, extrae su carpeta y ejecuta `instalar-linux.sh`. Después abre **Xispa Creative Suite para Linux** desde el menú. También puedes ejecutar `iniciar.sh` para abrirla sin instalación. Incluye Electron para Linux; no necesita Wine ni compilar Rust.
 
 La edición Linux recupera la interfaz, recursos y las doce aplicaciones de Xispa 0.3.77 para adaptarlos a Linux. Desde Linux 1.0.3 también se incluye **Xispa Figstudio**, basada en FigCraft 0.11.2, como decimotercera aplicación nativa independiente con icono FS. Se ha comprobado en Pop!_OS x86_64. Consulta las notas de la publicación para conocer el alcance de las pruebas y las funciones todavía no verificadas.
 
@@ -31,6 +31,10 @@ Linux 1.0.8 corrige la apertura de Notes y Canvas desde la suite: son aplicacion
 Incluye **Notes 1.0.1**, con barra de formato Markdown, vista dividida, previsualización y tiempo de lectura, y **Canvas 1.0.1**, con encuadre, cuadrícula, detalles de proyecto y diálogos protegidos frente a atajos accidentales. [Descargar Notes 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Notes-1.0.1-Linux-x64.zip) · [Descargar Canvas 1.0.1](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.8/Xispa-Canvas-1.0.1-Linux-x64.zip). Cierra cada editor antes de instalar su nueva versión; sus almacenes de datos se conservan fuera del programa. Los otros catorce editores no cambian.
 
 Linux 1.0.9 corrige una regresión de apertura de 1.0.8: el launcher utilizaba X11 incluso dentro de una sesión Wayland porque ambas variables de pantalla estaban presentes. Ahora selecciona Wayland nativo cuando la sesión lo indica y conserva X11 como alternativa. Se ha comprobado en el PC Pop!_OS una ventana visible, en primer plano y completamente cargada. La interfaz y los programas no cambian; Notes y Canvas siguen en 1.0.1, disponibles por separado en Linux 1.0.8. Las cuentas, preferencias y proyectos permanecen en sus almacenes anteriores.
+
+Linux 1.0.11 rediseña los editores conservando herramientas y formatos. Notes y Canvas pasan a 1.0.3, con texto más legible, controles redondeados y distribución adaptable. Figstudio 1.0.6 recibe el tema oscuro azul nativo, y Premiere 1.0.6 conserva su paleta de 1.0.5 con controles más redondeados. Las fuentes correspondientes de Premiere están en `Xispa-Premiere-1.0.6-Corresponding-Source.zip` en esta publicación. Los doce editores originales pasan a 1.0.6 con cambios en su entorno exterior y diálogos; sus interfaces internas WASM se conservan porque faltan sus fuentes personalizadas exactas. El launcher conserva su diseño. Los cuatro editores independientes se abren desde la suite sin cuenta y se mantiene la selección correcta de Wayland. Las instalaciones sustituidas se envían a la papelera, conservando los datos fuera del programa.
+
+[Descargar Notes 1.0.3](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.11/Xispa-Notes-1.0.3-Linux-x64.zip) · [Descargar Canvas 1.0.3](https://github.com/XispasStudios/XispasInstaller/releases/download/linux-v1.0.11/Xispa-Canvas-1.0.3-Linux-x64.zip). La instalación sigue siendo manual y la verificación de firmas permanece activa.
 
 ### Actualizaciones Linux
 
